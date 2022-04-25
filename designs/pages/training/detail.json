@@ -1,0 +1,105 @@
+[
+    {
+        "id": "sd_nYsTT5HSKMoaIEaL",
+        "type": "tab",
+        "createdDate": "2022-04-25T11:18:13.064Z",
+        "label": "detail",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "detailComponent"
+    },
+    {
+        "id": "sd_73M2IcqRNw86IXUo",
+        "type": "OnInit",
+        "z": "sd_nYsTT5HSKMoaIEaL",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_73M2IcqRNw86IXUo",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_42kNGwNJgyL0minO"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "detailComponent"
+    },
+    {
+        "id": "sd_42kNGwNJgyL0minO",
+        "type": "PageVariables",
+        "z": "sd_nYsTT5HSKMoaIEaL",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_42kNGwNJgyL0minO",
+        "category": "Function",
+        "x": 185,
+        "y": 40,
+        "wires": [
+            [
+                "sd_wZlWPL58PriRhyw7"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_wZlWPL58PriRhyw7",
+        "type": "Storage",
+        "z": "sd_nYsTT5HSKMoaIEaL",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "getData",
+        "operationType": "getItem",
+        "storageType": "sessionStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "data"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "this.page",
+            "value": "blog"
+        },
+        "functionName": "getData",
+        "category": "Storage",
+        "x": 325,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_9i681RionyRqRHCn",
+        "type": "Script",
+        "z": "sd_nYsTT5HSKMoaIEaL",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "datafroms",
+        "script": "console.log(selectedData)",
+        "functionName": "datafroms",
+        "category": "Function",
+        "x": 485,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true
+    }
+]

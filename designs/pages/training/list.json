@@ -1,0 +1,204 @@
+[
+    {
+        "id": "sd_ZlnmAVNPtancHhm3",
+        "type": "tab",
+        "createdDate": "2022-04-25T09:51:51.391Z",
+        "label": "list",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "listComponent"
+    },
+    {
+        "id": "sd_6TvzKhnM1e7qdtGl",
+        "type": "OnInit",
+        "z": "sd_ZlnmAVNPtancHhm3",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_6TvzKhnM1e7qdtGl",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_cLtuKJiGMC3gijZC"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "listComponent"
+    },
+    {
+        "id": "sd_cLtuKJiGMC3gijZC",
+        "type": "PageVariables",
+        "z": "sd_ZlnmAVNPtancHhm3",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "blogs",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_cLtuKJiGMC3gijZC",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_QerN9TjR3Ro7fmLo"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_QerN9TjR3Ro7fmLo",
+        "type": "Script",
+        "z": "sd_ZlnmAVNPtancHhm3",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.blogs=[\n    {\n        \"id\":1,\n        \"title\":\"the blog post 1\",\n        \"description\":\"description of first blog\",\n        \"image\":\"https://media.istockphoto.com/photos/abstract-icon-representing-the-ecological-call-to-recycle-and-reuse-picture-id1340716614?s=612x612\"\n    },\n    {\n         \"id\":2,\n        \"title\":\"the blog post 2\",\n        \"description\":\"description of second blog\",\n        \"image\":\"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg\"\n    },\n    { \"id\":3,\n        \"title\":\"the blog post 3\",\n        \"description\":\"description of third blog\",\n        \"image\":\"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80\"\n    },\n       {\n        \"id\":4,\n        \"title\":\"the blog post 4\",\n        \"description\":\"description of fourth blog\",\n        \"image\":\"https://image.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg\"\n    },\n    {\n         \"id\":5,\n        \"title\":\"the blog post 5\",\n        \"description\":\"description of fifth blog\",\n        \"image\":\"https://media.istockphoto.com/photos/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-picture-id1297349747?b=1&k=20&m=1297349747&s=170667a&w=0&h=oH31fJty_4xWl_JQ4OIQWZKP8C6ji9Mz7L4XmEnbqRU=\"\n    },\n    { \"id\":6,\n        \"title\":\"the blog post \",\n        \"description\":\"description of sixth blog\",\n        \"image\":\"https://cdn.pixabay.com/photo/2021/11/13/23/06/tree-6792528__340.jpg\"\n    }\n]",
+        "functionName": "sd_QerN9TjR3Ro7fmLo",
+        "category": "Function",
+        "x": 320,
+        "y": 40,
+        "wires": [
+            [
+                "sd_Ra5cqIgxxGLYKq5S"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_Ra5cqIgxxGLYKq5S",
+        "type": "Log",
+        "z": "sd_ZlnmAVNPtancHhm3",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "logs",
+        "outputs": 0,
+        "logObject": "this.page.blogs",
+        "functionName": "logs",
+        "category": "General",
+        "x": 440,
+        "y": 60,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "this.page",
+                "value": "blogs",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_0xVY81mAVn3IuL19",
+        "type": "PageStart",
+        "z": "sd_ZlnmAVNPtancHhm3",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "Navigator",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "navigator",
+        "category": "General",
+        "x": 85,
+        "y": 200,
+        "wires": [
+            [
+                "sd_rAO8sbyIiUbI9XhD"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "listComponent"
+    },
+    {
+        "id": "sd_MKRqmKVcOMsI184H",
+        "type": "Navigation",
+        "z": "sd_ZlnmAVNPtancHhm3",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/home/detail/:id",
+        "pathparams": [
+            {
+                "paramKey": "id",
+                "paramValue": {
+                    "type": "bh.input",
+                    "value": "event.id"
+                }
+            }
+        ],
+        "functionName": "sd_MKRqmKVcOMsI184H",
+        "category": "Navigation",
+        "x": 305,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_rAO8sbyIiUbI9XhD",
+        "type": "Storage",
+        "z": "sd_ZlnmAVNPtancHhm3",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "storage",
+        "operationType": "setItem",
+        "storageType": "sessionStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "data"
+        },
+        "value": {
+            "type": "bh.input",
+            "value": "event"
+        },
+        "resultMapping": {},
+        "functionName": "storage",
+        "category": "Storage",
+        "x": 185,
+        "y": 200,
+        "wires": [
+            [
+                "sd_MKRqmKVcOMsI184H"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    }
+]

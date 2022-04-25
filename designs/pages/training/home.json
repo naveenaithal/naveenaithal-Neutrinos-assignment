@@ -1,0 +1,101 @@
+[
+    {
+        "id": "sd_rG72mPOkSXC9WDSE",
+        "type": "tab",
+        "createdDate": "2022-04-25T07:46:00.315Z",
+        "label": "home",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_6K80qnSEJUVVbWYp",
+        "type": "OnInit",
+        "z": "sd_rG72mPOkSXC9WDSE",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "inputVariables": [],
+        "localVariables": [],
+        "outputVariables": [],
+        "functionName": "sd_6K80qnSEJUVVbWYp",
+        "category": "Lifecycle Events",
+        "x": 25,
+        "y": 40,
+        "wires": [
+            [
+                "sd_1qxVg6hbqTdDNt8k"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_1qxVg6hbqTdDNt8k",
+        "type": "PageVariables",
+        "z": "sd_rG72mPOkSXC9WDSE",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_1qxVg6hbqTdDNt8k",
+        "category": "Function",
+        "x": 165,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_qnupOWhs7xXUESrY",
+        "type": "PageStart",
+        "z": "sd_rG72mPOkSXC9WDSE",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "openAlert",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "openAlert",
+        "category": "General",
+        "x": 145,
+        "y": 180,
+        "wires": [
+            [
+                "sd_cJcF6MKrTYOgxLeI"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_cJcF6MKrTYOgxLeI",
+        "type": "Script",
+        "z": "sd_rG72mPOkSXC9WDSE",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "alert box text",
+        "script": "alert(\"hello hahahah\")",
+        "functionName": "alertBoxText",
+        "category": "Function",
+        "x": 285,
+        "y": 180,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    }
+]

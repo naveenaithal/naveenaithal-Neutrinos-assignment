@@ -1,0 +1,31 @@
+{
+    "routes": [
+        {
+            "path": "home",
+            "component": "homeComponent",
+            "pathMatch": "",
+            "redirectTo": "",
+            "children": [
+                {
+                    "path": "list",
+                    "component": "listComponent"
+                },
+                {
+                    "path": "detail/:id",
+                    "component": "detailComponent"
+                }
+            ]
+        },
+        {
+            "path": "''",
+            "redirectTo": "home",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent",
+            "redirectTo": ""
+        }
+    ]
+}
